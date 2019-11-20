@@ -1,9 +1,7 @@
 pipeline {
   agent any
 
-  environment {
-    EXCLUDE = 'eea.google'
-  }
+  
 
   parameters {
     string(defaultValue: '', description: 'Run tests with GIT_BRANCH env enabled', name: 'TARGET_BRANCH')
